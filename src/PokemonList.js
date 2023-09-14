@@ -2,10 +2,14 @@ import React from 'react'
 
 function PokemonList({pokemon}) {
   return (
-    <div>{pokemon.map(p=>(
-       <div key={p}> {p}</div>
+    <>
+   
+    <div className='name'>{pokemon.map(p=>(
+        <ul>
+       <li className='title' key={p}> {p}</li></ul>
     ))}</div>
-  )
+  
+  </>)
 }
 
 export default PokemonList;
